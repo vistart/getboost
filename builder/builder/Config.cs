@@ -6,17 +6,17 @@ namespace builder
     public static class Config
     {
         public static readonly Version Version = 
-            new StableVersion(1, 72, 0, 0);
+            new StableVersion(1, 75, 0, 0);
 
         public static readonly List[] Release =
         {
         };
 
-        public const string Authors = "Sergey Shandar, Boost";
+        public const string Authors = "vistart, Boost";
 
-        public const string Owners = "sergey_shandar";
+        public const string Owners = "vistart";
 
-        public const string BoostDir = @"..\..\..\..\..\..\boost\boost";
+        public const string BoostDir = @"..\..\..\..\..\boost";
 
         public sealed class CompilerInfo
         {
@@ -41,7 +41,7 @@ namespace builder
             { "vc120", new CompilerInfo("Visual Studio 2013 Update 5") },
             { "vc140", new CompilerInfo("Visual Studio 2015 Update 3") },
             { "vc141", new CompilerInfo("Visual Studio 2017 15.9.17") },
-            { "vc142", new CompilerInfo("Visual Studio 2019 16.3.6") },
+            { "vc142", new CompilerInfo("Visual Studio 2019 16.8.3") },
         };
 
         public static int CompilerNumber(string key)

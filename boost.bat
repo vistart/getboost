@@ -7,6 +7,7 @@ b2 headers
 
 rem add 'call :link XX.X' if you need to run for specific version of Visual C++ compiler.
 
+call :link 14.2
 call :link 14.0
 call :link 12.0
 call :link 11.0
